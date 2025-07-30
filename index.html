@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Afra Jabeen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+<div class="portfolio-container">
+  <!-- Navigation -->
+  <ul class="navlist">
+    <li><a href="#" class="active" id="nav-home">Home</a></li>
+    <li><a href="#" id="nav-work">Work</a></li>
+    <li><a href="#" id="nav-about">About</a></li>
+    <li><a href="#" id="nav-project">Project</a></li>
+    <li><a href="#" id="nav-contact">Contact</a></li>
+  </ul>
+
+  <!-- HOME SECTION -->
+  <div class="section" id="home-section" style="display: flex;">
+    <div class="left-container">
+      <div class="icons">
+        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <div class="content">
+        <p class="intro">Hi! I Am <span>AFRA JABEEN</span></p>
+        <h2 class="role">AIML ENGINEER</h2>
+        <p class="detail">
+          Passionate and detail-oriented in B.E Computer Science (AI & ML) with a strong foundation in machine learning, data structures, and software development. Proficient in Python, Java, SQL, and deep learning frameworks such as TensorFlow. Demonstrated problem-solving skills through academic projects.
+        </p>
+        <div class="btn-container">
+          <button>Hire me</button>
+          <button>View Project</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="design">
+        <div class="circle outer"></div>
+        <div class="circle inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <div class="section" id="about-section" style="display: none;">
+    <div class="left-container">
+      <div class="content">
+        <h2>About Me</h2>
+        <p class="detail">
+          I am Afra Jabeen, an enthusiastic AIML Engineer, passionate about leveraging data and algorithms to build intelligent systems. I specialize in Python, ML, and TensorFlow, and continuously expand my skill set through real-world projects.
+        </p>
+        <a href="Afra_Jabeen_Resume.pdf" download class="btn-container">
+          <button>Download Resume</button>
+        </a>
+      </div>
+    </div>
+    <div class="right-container"></div>
+  </div>
+
+  <!-- CONTACT SECTION (NEW) -->
+  <div class="section" id="contact-section" style="display: none;">
+    <div class="left-container" style="width: 100%; justify-content: center; align-items: center;">
+      <div class="contact-box">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
