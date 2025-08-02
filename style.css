@@ -255,5 +255,110 @@ body {
 .contact-form button:hover {
   background-color: #005fa3;
 }
+/* === Force white background and readable content in certificate tab === */
+#certificates {
+  background-color: #black !important;
+  color: #007bcd !important;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  z-index: 1;
+  margin-top: 15vh; /* to avoid overlap with navbar */
+}
+
+/* Certificate headings */
+#certificates h2 {
+  color: #007bcd;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Certificate list */
+#certificates ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#certificates li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Certificate links */
+#certificates a {
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#certificates a:hover {
+  color: #005fa3;
+}
+
+/* Icons */
+#certificates i.fa-certificate {
+  color: #007bcd;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+#certificates i.fa-star {
+  color: #0077cc;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+
+/* ==== PROJECT SECTION ==== */
+#project-section {
+  background-color: #ffffff;  /* white background */
+  color: #0077cc;             /* black text */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#project-section h2 {
+  font-size: 2rem;
+  color: #262525;
+  margin-bottom: 1rem;
+}
+
+#project-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#project-section li {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#project-section h3 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+#project-section p {
+  color: #555555;
+  margin-bottom: 0.5rem;
+}
+
+#project-section a {
+  color: #007bcd;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#project-section a:hover {
+  color: #005fa3;
+}
 
 
