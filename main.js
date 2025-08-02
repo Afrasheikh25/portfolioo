@@ -1,11 +1,14 @@
-// Cache references to sections
+// Cache references to sections by ID
 const sections = {
   home: document.getElementById('home-section'),
   about: document.getElementById('about-section'),
-  // Add more sections later if needed
+  work: document.getElementById('work-section'),
+  project: document.getElementById('project-section'),
+  contact: document.getElementById('contact-section'),
+  certificate: document.getElementById('certificate-section')
 };
 
-// Show only the requested section and hide others
+// Function to show only the requested section
 function showSection(sectionToShow) {
   Object.values(sections).forEach(sec => {
     sec.style.display = 'none';
@@ -13,7 +16,7 @@ function showSection(sectionToShow) {
   sectionToShow.style.display = 'flex';
 }
 
-// Set the active class on navigation links
+// Function to set active nav link
 function setActiveLink(activeId) {
   document.querySelectorAll('.navlist li a').forEach(link => {
     link.classList.remove('active');
@@ -21,47 +24,47 @@ function setActiveLink(activeId) {
   document.getElementById(activeId).classList.add('active');
 }
 
-// Event listeners
-document.getElementById('nav-home').addEventListener('click', e => {
-  e.preventDefault();
-  showSection(sections.home);
-  setActiveLink('nav-home');
+// Setup event listeners for each nav item
+Object.keys(sections).forEach(sectionKey => {
+  const navId = `nav-${sectionKey}`;
+  const section = sections[sectionKey];
+
+  const navItem = document.getElementById(navId);
+  if (navItem && section) {
+    navItem.addEventListener('click', e => {
+      e.preventDefault();
+      showSection(section);
+      setActiveLink(navId);
+    });
+  }
 });
 
-document.getElementById('nav-about').addEventListener('click', e => {
-  e.preventDefault();
-  showSection(sections.about);
-  setActiveLink('nav-about');
-});
-
-// Initial state
+// Initial load: show home section
 window.onload = () => {
   showSection(sections.home);
   setActiveLink('nav-home');
 };
-document.querySelectorAll('.navlist a').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
 
-    // Hide all sections
-    document.querySelectorAll('.section').forEach(section => {
-      section.style.display = 'none';
+// ✅ Auto-fetch your GitHub projects
+fetch('https://api.github.com/users/Afrasheikh25/repos')
+  .then(response => response.json())
+  .then(repos => {
+    const projectList = document.querySelector('#project-section ul');
+
+    // Remove manual projects (optional)
+    projectList.innerHTML = '';
+
+    // Display latest 5 projects
+    repos.slice(0, 5).forEach(repo => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <h3>${repo.name}</h3>
+        <p>${repo.description || 'No description provided'}</p>
+        <a href="${repo.html_url}" target="_blank">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>`;
+      projectList.appendChild(li);
     });
-
-    // Remove 'active' from all navs
-    document.querySelectorAll('.navlist a').forEach(nav => {
-      nav.classList.remove('active');
-    });
-
-    // Show current section
-    const targetId = this.id.replace('nav-', '') + '-section';
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.style.display = 'flex';
-    }
-
-    // Set active class
-    this.classList.add('active');
-  });
-});
-
+  })
+  
+  .catch(error => console.error('GitHub API error:', error));
