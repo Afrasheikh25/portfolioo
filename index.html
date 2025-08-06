@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="A-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Afra Jabeen</title>
   <link rel="stylesheet" href="style.css" />
@@ -20,6 +21,7 @@
     <li><a href="#" id="nav-project">Project</a></li>
     <li><a href="#" id="nav-contact">Contact</a></li>
     <li><a href="#" id="nav-certificate">Certificate</a></li>
+    
   </ul>
 
   <!-- HOME SECTION -->
@@ -36,8 +38,8 @@
           Passionate and detail-oriented in B.E Computer Science (AI & ML) with a strong foundation in machine learning, data structures, and software development. Proficient in Python, Java, SQL, and deep learning frameworks such as TensorFlow. Demonstrated problem-solving skills through academic projects.
         </p>
         <div class="btn-container">
-          <button>Hire me</button>
-          <button>View Project</button>
+          <button id="hire-me-btn">Hire me</button>
+          <button id="view-project-btn">View Project</button>
         </div>
       </div>
     </div>
@@ -54,7 +56,7 @@
   <div class="section" id="about-section" style="display: none;">
     <div class="left-container">
       <div class="content">
-        <h2>About Me</h2>
+        <h2>   About Me    </h2>
         <p class="detail">
           I am Afra Jabeen, an enthusiastic AIML Engineer, passionate about leveraging data and algorithms to build intelligent systems. I specialize in Python, ML, and TensorFlow, and continuously expand my skill set through real-world projects.
         </p>
@@ -99,7 +101,7 @@
   <div class="section" id="contact-section" style="display: none;">
     <div class="left-container" style="width: 100%; justify-content: center; align-items: center;">
       <div class="contact-box">
-        <h2>Contact Me</h2>
+        <h2>   Contact Me    </h2>
         <form action="https://formspree.io/f/mrblaejz" method="POST" class="contact-form">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -117,40 +119,79 @@
   <div class="section" id="certificate-section" style="display: none;">
     <div class="left-container">
       <div class="content">
-        <h2>Certificates</h2>
-        <ul>
-          <li>
-            <a href="https://drive.google.com/file/d/1yvUlsahxjfa6t5SsiRUplSAb-T6D627S/view?usp=sharing" target="_blank">
-              <i class="fa-solid fa-certificate"></i> TATA GenAI Powered Data Analytics (Forage) – July 2025
-            </a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/1CaeFKKyJXZQHzKv7HqU_cpixwaca2ZYe/view?usp=sharing" target="_blank">
-              <i class="fa-solid fa-certificate"></i> Deloitte Data Analytics (Forage) – July 2025
-            </a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/1obK7RHpXE-y4dcZoSP7H6Kw79AwyU_0N/view?usp=sharing" target="_blank">
-              <i class="fa-solid fa-certificate"></i> AWS Solutions Architecture (Forage) – July 2025
-            </a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/1Zcr3x2aC0mZl94-i2Az_1z373ZzWTQ8V/view?usp=sharing" target="_blank">
-              <i class="fa-solid fa-certificate"></i> IBM AI SkillsBuild – July 2025
-            </a>
-          </li>
-        </ul>
+       <h2>   Certificates     </h2>
+  <ul>
+    <li>
+      <a href="https://www.theforage.com/" target="_blank">
+        <i class="fa-solid fa-certificate"></i> TATA GenAI Powered Data Analytics Job Simulation (Forage) – July 2025
+      </a>
+    </li>
+    <li>
+      <a href="https://www.theforage.com/" target="_blank">
+        <i class="fa-solid fa-certificate"></i> Deloitte Data Analytics Job Simulation (Forage) – July 2025
+      </a>
+    </li>
+    <li>
+      <a href="https://www.theforage.com/" target="_blank">
+        <i class="fa-solid fa-certificate"></i> AWS Solutions Architecture Job Simulation (Forage) – July 2025
+      </a>
+    </li>
+    <li>
+      <a href="https://skillsbuild.org/" target="_blank">
+        <i class="fa-solid fa-certificate"></i> Getting Started with Artificial Intelligence (IBM SkillsBuild) – July 2025
+      </a>
+    </li>
+  </ul>
+  <h2><i class="fa-solid fa-star"></i>     Extra-Curricular Activities      </h2>
+  <ul>
+    <li>
+      <a href="https://drive.google.com/file/d/1hvZbKW8QpR4HOIOibMBS6HVDHoKyMtyd/view?usp=sharing" target="_blank">
+        <i class="fa-solid fa-star"></i> SKULERR Tech Expedition – AI, Power BI, and AR/VR Workshop by GlobalLogic & TechShiksha (Jul 2024)
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/file/d/1FEXAMPLEHackathonCertificate/view?usp=sharing" target="_blank">
+        <i class="fa-solid fa-star"></i> Techavishkar 2.O – National Level Hackathon (15–16 May 2025)
+      </a>
+    </li>
+  </ul>
+  </div>
+   </div>
+    </div>
+    </ul>
+</div>
+</div> <!-- This closes the certificate-section properly -->
 
-        <h2>Extra-Curricular Activities</h2>
-        <ul>
-          <li><i class="fa-solid fa-star"></i> SKULERR Tech Expedition – AI, Power BI, and AR/VR Workshop (Jul 2024)</li>
-          <li><i class="fa-solid fa-star"></i> National Hackathon (Techavishkar 2.O) – 15–16 May 2025</li>
-        </ul>
-      </div>
+<!-- SKILL SECTION STARTS HERE -->
+<section id="skill-section" class="section" style="display: none;">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-box">
+      <h3>Programming Languages</h3>
+      <p>Python, C, Java (Basics)</p>
+    </div>
+    <div class="skill-box">
+      <h3>Web Technologies</h3>
+      <p>HTML, CSS, Flask</p>
+    </div>
+    <div class="skill-box">
+      <h3>Machine Learning & AI</h3>
+      <p>TensorFlow, Scikit-learn, OpenCV, YOLO, MediaPipe, MobileNetV2</p>
+    </div>
+    <div class="skill-box">
+      <h3>Data Handling & Visualization</h3>
+      <p>Pandas, NumPy, Tableau, Power BI, Excel</p>
+    </div>
+    <div class="skill-box">
+      <h3>Tools</h3>
+      <p>Jupyter Notebook, Google Colab, VS Code, Git</p>
+    </div>
+    <div class="skill-box">
+      <h3>Soft Skills</h3>
+      <p>Communication, Teamwork, Problem Solving</p>
     </div>
   </div>
-</div>
-
+</section>
 <script src="main.js"></script>
 </body>
 </html>
