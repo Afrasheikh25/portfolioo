@@ -33,7 +33,9 @@
       </div>
       <div class="content">
         <p class="intro">Hi! I Am <span>AFRA JABEEN</span></p>
-        <h2 class="role">AIML ENGINEER</h2>
+        <h2 class="role-title">
+  AIML Enthusiast, Machine Learning Engineer, Fullstack Developer
+</h2>
         <p class="detail">
           Passionate and detail-oriented in B.E Computer Science (AI & ML) with a strong foundation in machine learning, data structures, and software development. Proficient in Python, Java, SQL, and deep learning frameworks such as TensorFlow. Demonstrated problem-solving skills through academic projects.
         </p>
@@ -52,21 +54,58 @@
     </div>
   </div>
 
-  <!-- ABOUT SECTION -->
-  <div class="section" id="about-section" style="display: none;">
-    <div class="left-container">
-      <div class="content">
-        <h2>   About Me    </h2>
-        <p class="detail">
-          I am Afra Jabeen, an enthusiastic AIML Engineer, passionate about leveraging data and algorithms to build intelligent systems. I specialize in Python, ML, and TensorFlow, and continuously expand my skill set through real-world projects.
-        </p>
-        <a href="Afra_Jabeen_Resume.pdf" download class="btn-container">
-          <button>Download Resume</button>
-        </a>
+ <!-- ABOUT SECTION -->
+<div class="section" id="about-section" style="display: none;">
+  <div class="about-grid">
+    <div class="left-content">
+      <h2>About Me</h2>
+      <p class="detail">
+        I am Afra Jabeen, an enthusiastic AIML Engineer, passionate about leveraging data and algorithms to build intelligent systems. I specialize in Python, ML, and TensorFlow, and continuously expand my skill set through real-world projects.
+      </p>
+
+      <a href="Afra_Jabeen_Resume.pdf" download class="btn-container">
+        <button>Download Resume</button>
+      </a>
+
+      <!-- Stats Boxes -->
+      <div class="stats-section">
+        <div class="stats-container horizontal">
+          <div class="stat-box">
+            <h3>3+</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-box">
+            <h3>3+</h3>
+            <p>Freelance Projects</p>
+          </div>
+          <div class="stat-box">
+            <h3>100+</h3>
+            <p>Client Satisfaction</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="right-container"></div>
+
+    <div class="right-content">
+      <!-- Skills Section -->
+      <div class="skills-section">
+        <h3 class="skills-title">My Skills</h3>
+        <div class="skills-pill-container">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">TensorFlow</span>
+          <span class="skill-pill">Machine Learning</span>
+          <span class="skill-pill">C</span>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
 
   <!-- WORK SECTION (empty now) -->
   <div class="section" id="work-section" style="display: none;">
@@ -78,42 +117,113 @@
     </div>
   </div>
 
-  <!-- PROJECT SECTION (with project only) -->
-  <div class="section" id="project-section" style="display: none;">
-    <div class="left-container">
-      <div class="content">
-        <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
-        <ul>
-          <li>
-            <h3>Lung Disease Classification Using Deep Learning</h3>
-            <p>Built a deep learning model using CNN to classify chest X-ray images into Pneumonia, Tuberculosis, and COVID-19.</p>
-            <a href="https://github.com/Afrasheikh25/lungs-disease-classification-using-deep-learning" target="_blank">
-              <i class="fa-brands fa-github"></i> View on GitHub
-            </a>
-          </li>
-          <!-- Add more projects here -->
-        </ul>
+<section id="project-section" class="section" style="display: none;">
+  <div class="portfolio__container">
+    <h2 class="portfolio__title">Projects</h2>
+
+    <div class="project-row">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-banner"></div>
+        <div class="project-content">
+          <h3>Personal Portfolio Website</h3>
+          <p>A fully responsive personal portfolio showcasing projects, skills, contact form, and resume download. Built to highlight AIML expertise and frontend skills.</p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <a href="https://github.com/Afrasheikh25/portfolioo.git" class="project-btn" target="_blank">
+            <i class="fa-brands fa-github"></i> View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-banner"></div>
+        <div class="project-content">
+          <h3>Binary Regression on 3D Objects Using ML</h3>
+          <p>Aimed to classify 3D objects using binary regression models with 3D plotting and visual analytics.</p>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Matplotlib</span>
+          </div>
+          <a href="https://github.com/Afrasheikh25/Binary-regression-on-3D-Objects-Using-ML" class="project-btn" target="_blank">
+            <i class="fa-brands fa-github"></i> View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-banner"></div>
+        <div class="project-content">
+          <h3>Lung Disease Classification Using Deep Learning</h3>
+          <p>Built a deep learning model using CNN to classify chest X-ray images into Pneumonia, Tuberculosis, and COVID-19.</p>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>CNN</span>
+          </div>
+          <a href="https://github.com/Afrasheikh25/lung-disease-using-deep-learning.git" class="project-btn" target="_blank">
+            <i class="fa-brands fa-github"></i> View Project
+          </a>
+        </div>
       </div>
     </div>
+
   </div>
+</section>
+
 
   <!-- CONTACT SECTION -->
-  <div class="section" id="contact-section" style="display: none;">
-    <div class="left-container" style="width: 100%; justify-content: center; align-items: center;">
-      <div class="contact-box">
-        <h2>   Contact Me    </h2>
-        <form action="https://formspree.io/f/mrblaejz" method="POST" class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+   <!-- CONTACT SECTION -->
+<div class="section" id="contact-section" style="display: none;">
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-box">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p>afrajabeen2508@gmail.com</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <h3>Phone</h3>
+          <p>7892583116</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <div>
+          <h3>Location</h3>
+          <p>Mysore, India</p>
+        </div>
       </div>
     </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-box">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mrblaejz" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </div>
+</div>
+
+
 
   <!-- CERTIFICATE SECTION (moved here and corrected) -->
   <div class="section" id="certificate-section" style="display: none;">
