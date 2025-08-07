@@ -76,3 +76,20 @@ document.getElementById('view-project-btn').addEventListener('click', e => {
   document.getElementById('project-section').style.display = 'flex';
   setActiveLink('nav-project');
 });
+const hamburger = document.getElementById('hamburger-menu');
+const navlist = document.getElementById('navlist');
+
+hamburger.addEventListener('click', () => {
+  navlist.classList.toggle('open');
+  hamburger.classList.toggle('active');
+  document.body.classList.toggle('nav-open');
+});
+
+// Close menu on tab click for better UX
+document.querySelectorAll('#navlist li a').forEach(link => {
+  link.addEventListener('click', () => {
+    navlist.classList.remove('open');
+    hamburger.classList.remove('active');
+    document.body.classList.remove('nav-open');
+  });
+});
