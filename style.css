@@ -617,7 +617,7 @@ body {
     transition: color 0.3s, transform 0.3s;
   }
   .icons .fa-brands:hover {
-    color: #3877FF;
+    color: #00ffff;
     transform: scale(1.2) rotate(-7deg);
   }
 
@@ -977,4 +977,30 @@ section {
 
 .social-links i:hover {
   transform: scale(1.2); /* Optional zoom on hover */
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px; /* space between icons and image */
+}
+
+.icons a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #00e5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00e5ff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.icons a:hover {
+  background: #00e5ff;
+  color: #121212;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00e5ff;
 }
