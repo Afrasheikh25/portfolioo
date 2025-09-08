@@ -1,3 +1,13 @@
+const roles = ["AIML Enthusiast", "Full stack developer", "AI Engineer"];
+let roleIndex = 0;
+const roleElement = document.getElementById("animated-roles");
+
+function changeRole() {
+  roleElement.textContent = roles[roleIndex];
+  roleIndex = (roleIndex + 1) % roles.length;
+}
+changeRole();
+setInterval(changeRole, 2500); // every 2.5s
 const sections = {
   home: document.getElementById('home-section'),
   about: document.getElementById('about-section'),
